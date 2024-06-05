@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --bg-color: rgb(243 229 216);
+    --content-bg-color: #fff;
+    --title-color: hsl(14, 45%, 36%);
+    --subtitle-color: hsl(332, 51%, 32%);
+    --text-color-1: rgb(121 118 113);
+    --text-color-2: hsl(30, 10%, 34%);
+    --header-color: hsl(24, 5%, 18%);
+    --line-color: hsl(30, 18%, 87%);
+    --eggshell: hsl(30, 54%, 90%);
+    --section-spacing: 24px;
+    --header-spacing: 16px;
+    --header-font-family: "Young Serif", serif;
+    --font-family: "Outfit", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--text-color-1);
+}
+
+.container {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 10% 0 calc(10% - 48px);
+}
+
+.content {
+    background-color: var(--content-bg-color);
+    width: 52%;
+    border-radius: 25px;
+    padding: 2.7%;
+}
+
+.content-img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-family: var(--header-font-family);
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--header-color);
+    margin-bottom: var(--header-spacing);
+}
+
+section {
+    padding: var(--section-spacing) 0;
+}
+
+h3 {
+    color: var(--title-color);
+    font-family: var(--header-font-family);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.preparation-time h3 {
+    color: var(--subtitle-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    display: block;
+    padding: 24px;
+    margin: var(--section-spacing) 0;
+}
+
+.text-bold {
+    color: var(--text-color-2);
+    font-weight: 700;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.attribution a { 
+    color: var(--text-color-1); 
+    margin-left: 4px;
+}
